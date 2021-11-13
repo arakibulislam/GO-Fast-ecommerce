@@ -2,6 +2,7 @@ import axios from "axios";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initFirebase from "../Firebase/firebaseInit";
+import avatar from '../images/man.png'
 
 
 initFirebase();
@@ -21,7 +22,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 setError('');
-                const newUser = { email, displayName: name };
+                const newUser = { email, displayName: name , photoURL: `${avatar} ` };
                 setUser(newUser);
                 // save user to database
                 saveUser(email,name);

@@ -52,14 +52,17 @@ const MakeAdmin = () => {
                         <h3>
                             Make Admin
                         </h3>
+
                     </div>
                 </div>
             </div>
             <div className='container'>
+
                 <form className='col-lg-6 col-12 ' onSubmit={handleSubmit(onSubmit)} autoComplete="off">
-                    <label >Please Input Email*</label>
+                    <p className='text-muted'>To make an user to admin you need to use users orginal email addres. </p>
+                    <label >Please User Email*</label>
                     <input {...register("email", { required: true })} type='email' placeholder="email" />
-                    {errors.email && <span>This field is required</span>}                
+                    {errors.email && <span>This field is required</span>}
                     <input className='button rounded my-2' type="submit" />
                 </form>
             </div>

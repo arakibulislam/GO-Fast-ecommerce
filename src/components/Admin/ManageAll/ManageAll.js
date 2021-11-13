@@ -1,13 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
-import useAuth from '../../../Contex/useAuth';
 import Swal from 'sweetalert2'
 
 const ManageAll = () => {
     const [orderInfo, setOrderInfo] = useState([]);
     const [orderStatus, setOrderStatus] = useState(1);
-    const { user } = useAuth();
 
     useEffect(() => {
         axios.get("https://intense-sierra-15995.herokuapp.com/allorder")

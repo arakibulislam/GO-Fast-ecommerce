@@ -5,13 +5,11 @@ import Login from './components/LogAndReg/Login';
 import Registration from './components/LogAndReg/Registration';
 import AuthProvider from './Contex/AuthProvider';
 import PrivatRoute from './PrivateRoute/PrivatRoute';
-import AddProducts from './components/Admin/AddProducts/AddProducts';
 import Admin from './components/Admin/Admin/Admin';
 import Products from './components/Products/Products';
 import SingleProduct from './components/singleProduct/SingleProduct';
 import Order from './components/Order/Order';
 import UserOrder from './components/Home/UserOrder/UserOrder';
-import MyOrder from './components/UserDash/MyOrder';
 import HomeBlog from './components/Home/HomeBlog/HomeBlog';
 import NotFound from './components/NotFound/NotFound';
 
