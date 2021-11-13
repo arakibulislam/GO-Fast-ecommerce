@@ -1,0 +1,423 @@
+.product-grid{
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.product-image{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.product-image .image{ display: block; }
+.product-image img{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.product-image .pic-1{ transition: all 0.3s ease 0s; }
+.product-image:hover .pic-1{ transform: translateX(100%); }
+.product-image .pic-2{
+    width: 100%;
+    height: 100%;
+    transform: translateX(-101%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease 0s;
+}
+.product-image:hover .pic-2{ transform: translateX(0); }
+.product-sale-label{
+    color: #fff;
+    background: #ff7d24 ;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.product-like-icon{
+    color: #696969;
+    font-size: 22px;
+    line-height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.product-like-icon:hover{ color: #0a805e; }
+.product-like-icon:before,
+.product-like-icon:after{
+    content: attr(data-tip);
+    color: #fff;
+    background-color: #000;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 7px 7px 5px;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transition: all 0.3s ease 0s;
+}
+.product-like-icon:after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    transform: translateX(-50%) rotate(45deg);
+    right: auto;
+    left: 50%;
+    top: 15px;
+    z-index: -1;
+}
+.product-like-icon:hover:before,
+.product-like-icon:hover:after{
+    visibility: visible;
+    top: 30px;
+}
+.product-links{
+    width: 170px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transition: all 0.3s ease 0s;
+}
+.product-grid:hover .product-links{
+    bottom: 40px;
+    opacity: 1;
+}
+.product-link li{
+    display: inline-block !important;
+    margin: 0 2px;
+}
+.product-links .product-link{
+    
+    color: #fff;
+    background: #000;
+    font-size: 20px;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.product-grid:hover .product-links .product-link:hover{ background: #333; }
+.product-content{
+    text-align: left;
+    padding: 15px 0 0;
+}
+.title{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 8px;
+}
+.title{
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease 0s;
+}
+.title:hover{ color: #ff7d24 ; }
+.price{
+    color: #ff7d24 ;
+    font-size: 20px;
+    font-weight: 500;
+}
+.price span{
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin: 0 5px 0 0;
+}
+@media screen and (max-width: 990px){
+    .product-grid{ margin: 0 0 30px; }
+}
+
+/* =================== Shoes style =============== */
+
+.shoe-b-text h1{
+    padding-top: 29rem;
+    color: rgb(226, 226, 226);
+    font-weight: 900;
+}
+.shoe-b-text-1 h3{
+    color: white;
+    font-weight: 900;
+}
+
+/*========== footer======== */
+
+.deneb_footer .widget_wrapper {
+    background-color: rgb(224, 224, 224);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 70px;
+}
+@media (max-width: 767px) {
+    .deneb_footer .widget_wrapper .widget {
+        margin-bottom: 40px;
+    }
+}
+.deneb_footer .widget_wrapper .widget .widget_title {
+    margin-bottom: 30px;
+}
+.deneb_footer .widget_wrapper .widget .widget_title h4 {
+    font-weight: bold;
+}
+.deneb_footer .widget_wrapper .widget .widget_title h4:after {
+    content: "";
+    display: block;
+    background: rgb(255,169,0) !important;
+  background: linear-gradient(333deg, rgba(255,169,0,1) 20%, rgba(255,125,36,1) 49%, rgba(236,104,0,1) 84%) !important;
+    max-width: 38px;
+    height: 2px;
+    margin-top: 5px;
+}
+.deneb_footer .widget_wrapper .widegt_about p {
+    margin-bottom: 20px;
+}
+.deneb_footer .widget_wrapper .widegt_about .social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.deneb_footer .widget_wrapper .widegt_about .social li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f9e6d4;
+    color: #fba543;
+    font-size: 14px;
+    transition: all all 0.5s ease-out 0s;
+}
+.deneb_footer .widget_wrapper .widegt_about .social li a:hover,
+.deneb_footer .widget_wrapper .widegt_about .social li a:focus {
+    background-image: -ms-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
+    color: #fff;
+    box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
+}
+.deneb_footer .widget_wrapper .widget_link ul li {
+    margin-bottom: 5px;
+}
+.deneb_footer .widget_wrapper .widget_link ul li a {
+    text-transform: capitalize;
+    color: #7a808d;
+}
+.deneb_footer .widget_wrapper .widget_link ul li a:hover,
+.deneb_footer .widget_wrapper .widget_link ul li a:focus {
+    color: #feb000;
+}
+.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info {
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .icon {
+    font-size: 12px;
+    color: #feb000;
+    margin-right: 10px;
+}
+.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .info p a {
+    color: #7a808d;
+}
+.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .info p span {
+    display: block;
+}
+
+.deneb_footer .copyright_area {
+    background: #dddddd;
+    padding: 10px 0;
+}
+.deneb_footer .copyright_area .copyright_text {
+    text-align: center;
+}
+.deneb_footer .copyright_area .copyright_text p {
+    color: #011a3e;
+}
+.deneb_footer .copyright_area .copyright_text p span {
+    color: #feb000;
+}
+.deneb_cta .cta_wrapper {
+    padding: 45px 50px 42px;
+    max-width: 970px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: -135px;
+    position: relative;
+    background-image: -moz-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
+    background-image: -webkit-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
+    background-image: -ms-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
+    box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
+    z-index: 1;
+}
+.deneb_cta .cta_wrapper:after {
+    content: "";
+    background: rgb(255,169,0) !important;
+    background: linear-gradient(333deg, rgba(255,169,0,1) 20%, rgba(255,125,36,1) 49%, rgba(236,104,0,1) 84%) !important;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.deneb_cta .cta_wrapper .cta_content h3 {
+    color: #fff;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    .deneb_cta .cta_wrapper .cta_content h3 {
+        font-size: 24px;
+    }
+}
+.deneb_cta .cta_wrapper .cta_content h3:after {
+    content: "";
+    display: block;
+    background: rgb(255, 170, 0) !important;
+    background: linear-gradient(333deg, rgba(255,169,0,1) 20%, rgba(255,125,36,1) 49%, rgba(236,104,0,1) 84%) !important;
+    max-width: 110px;
+    height: 2px;
+    margin-top: 13px;
+    margin-bottom: 24px;
+}
+.deneb_cta .cta_wrapper .cta_content p {
+    color: #fff;
+}
+.deneb_cta .cta_wrapper .button_box {
+    float: right;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .deneb_cta .cta_wrapper .button_box {
+        float: none;
+        text-align: left;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .deneb_cta .cta_wrapper .button_box {
+        float: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+.deneb_cta .cta_wrapper .button_box .deneb_btn {
+    background: rgb(133, 133, 133);
+    color: #011a3e;
+}
+.deneb_cta .cta_wrapper .button_box .deneb_btn:hover,
+.deneb_cta .cta_wrapper .button_box .deneb_btn:focus {
+    box-shadow: 2.5px 4.33px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* ============ review ================= */
+
+.star-rating li {
+	padding: 0 2px;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffdc12;
+}
+
+.media {
+	position: relative;
+	padding: 0 0 0 20px;
+	margin-left: 20px;
+}
+.media img {
+	width: 75px;
+	height: 75px;
+	display: block;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border: 2px solid #fff;
+}
+.testimonial {
+    color: #fff;
+    position: relative;    
+    background: rgb(255,169,0) !important;
+    background: linear-gradient(333deg, rgba(255,169,0,1) 20%, rgba(255,125,36,1) 49%, rgba(236,104,0,1) 84%) !important;
+	padding: 15px;
+	margin: 0 0 20px 20px;
+}
+.testimonial::before, .testimonial::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+}
+.testimonial::before {
+    width: 20px;
+    height: 20px;
+    background: rgb(255,169,0) !important;
+    background: linear-gradient(333deg, rgba(255,169,0,1) 20%, rgba(255,125,36,1) 49%, rgba(236,104,0,1) 84%) !important;
+	box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
+}
+.testimonial::after {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+}
+.testimonial {
+	margin: 0 20px 20px 0;
+}
+.media {
+	margin-left: 0;
+}
+.testimonial p {
+	text-indent: 40px;
+    line-height: 21px;
+	margin: 0;
+}
+.testimonial p::before {
+	content: "\201D";
+  	font-family: Arial,sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 70px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+.overview {
+	padding: 3px 0 0 15px;
+}
+.overview .details {
+	padding: 5px 0 8px;
+}
+.overview b {
+	text-transform: uppercase;
+	color: #ff5555;
+    
+}
+
+.img-1{
+    transition-duration: .5s;
+    transition-property: all;
+}
+.img-1:hover{
+    transition-duration: .4s;
+    transition-property: all;
+    transform: scale(1.2);
+}
+.p-card{
+    box-shadow: 5px 5px 30px 5px rgb(0 0 0 / 5%);
+    border-radius: 5px !important;
+}

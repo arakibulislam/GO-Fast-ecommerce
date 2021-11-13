@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+.logo{
+  width:50px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.login{
+  background-image: url('https://kit.juliha.com/walkon/wp-content/uploads/sites/17/2021/06/bgc_Artboard-3_2.png');
+  background-position: center right;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.logo-1{
+  color:#ffa600 ;
+}
+
+.banner{
+  background-image: url('https://preview.colorlib.com/theme/karma/img/banner/banner-bg.jpg.webp');
+  background-position: center center;
+  min-height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -9rem;
+}
+.banner-3{
+  background-image: url('https://preview.colorlib.com/theme/karma/img/banner/xcommon-banner.jpg.pagespeed.ic.vza0XxJ8KP.jpg');
+  background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -26rem;
+  margin-bottom: -30em;
+
+}
+.banner-4{
+  background-image: url("./images/banner.png");
+  background-position: top ;
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+
+.banner-1{
+  padding-top: 13rem;
+}
+.banner-2{
+  position: relative;
+  top: -4rem;
+
+  
+}
+.text-banner{
+ 
+  
+  font-weight:700;
+}
+.text-banner-1{
+  color: #ff7d24 ;
+}
+.box{
+  background: #fff;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+}
+.features{
+  box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+  padding: 40px 0;
+}
+
+.user-img{
+  width: 50px;
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+}
+.user-img-1{
+  width: 30px;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+  border-color: #0a57ca00 !important;
+  box-shadow: 0 0 0 0 rgb(49 132 253 / 0%) !important;
+}
+#dropdown-basic{
+  padding: 0 !important;
+}
+
+/* .register{
+  background-image: url("https://kit.juliha.com/walkon/wp-content/uploads/sites/17/2021/06/bgc_Artboard-3_2.png");
+  background-position: center right;
+   min-height: 100vh;
+   background-size:cover;
+   background-repeat: no-repeat;
+} */
+
+
+/* label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: rgb(41, 41, 41);
+  font-size: 16px;
+  font-weight: 400;
+} */
+
+input , select, textarea {
+  background-color: rgb(223, 223, 223);
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 15px;
+  margin-bottom: 10px !important;
+  font-size: 14px;
+}
+
+
+input[type="submit"] {
+  border-radius: 10px;
+  
+}
+
+.user-img-1{
+  width: 70px;
+  margin: 0 auto !important;
+    padding: 0 !important;
+}
+.sidebar{
+  background: rgb(255,169,0) !important;
+  background: linear-gradient(333deg, rgba(255,169,0,1) 20%, rgba(255,125,36,1) 49%, rgba(236,104,0,1) 84%) !important;
+}
+.button{
+  padding: 10px 20px;
+  background: #ffaa00 !important;
+  background: linear-gradient(333deg, rgba(255,169,0,1) 20%, rgba(255,125,36,1) 49%, rgba(236,104,0,1) 84%) !important;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
 }
